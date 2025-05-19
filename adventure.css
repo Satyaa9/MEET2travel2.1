@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  color: #ccc;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.auth-buttons button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: #00cfff;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.adventure-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.subheading h2{
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin: 0.5rem 0 1.5rem;
+  color: #333;
+  text-align: center;
+  padding-left: 3rem;
+}
+
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  padding: 0.6rem 1rem;
+  border: 2px solid #00baff;
+  border-radius: 20px;
+  background: transparent;
+  color: #00baff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #00baff;
+  color: #fff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: end;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.card-content .tag {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card.dark {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+/* 
+.card-content.center {
+  text-align: center;
+} */
+
+.card-content.center .logo {
+  max-width: 60px;
+  margin-bottom: 0.5rem;
+}

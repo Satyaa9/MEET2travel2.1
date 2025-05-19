@@ -1,0 +1,77 @@
+.plan-trip {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.section-description {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.step {
+  max-width: 280px;
+}
+
+.step img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.step h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-plan {
+  display: inline-block;
+  background-color: #00cfff;
+  color: white;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-plan:hover {
+  background-color: #00b0da;
+}
