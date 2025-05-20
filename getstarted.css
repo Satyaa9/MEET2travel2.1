@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+header {
+  height: 100vh;
+  /* background: url('https://akshitphotography.com/wp-content/uploads/2021/08/Nature-Photography-105.jpg') no-repeat center center/cover; */
+  color: white;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  color: #ccc;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.auth-buttons button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: #00cfff;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.place-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+}
+
+.place-card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.place-info {
+  padding: 20px;
+  width: 60%;
+}
+
+.place-info h2 {
+  margin-top: 0;
+  color: #0078d7;
+}
+
+.place-info p {
+  margin: 8px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0078d7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005ea3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .place-card {
+    flex-direction: column;
+  }
+
+  .place-card img,
+  .place-info {
+    width: 100%;
+  }
+}
+
+/* more-info */
+/* .more-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eef6ff;
+  border-left: 4px solid #0078d7;
+  border-radius: 5px;
+}
+
+.person-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.person-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.toggle-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e68900;
+} */
