@@ -1,0 +1,130 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body, html {
+ 
+  width: 100%;
+}
+header{
+  height: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 0, 0.608), pink);
+    background-repeat: no-repeat;
+    background-size: cover;
+  text-align: center;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  color: #ccc;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: #00cfff;
+  color: white;
+  border-radius: 5px;
+}
+.contact-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.contact-form input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color:aquamarine;
+  padding: 40px 20px;
+  color: white;
+}
+
+.info-box {
+  width: 250px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.submit{
+    width: 8rem;
+}
