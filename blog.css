@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+header {
+  height:100vh;
+ background-image: url(/Blog-img.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position:0rem 0rem;
+
+  color: white;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  color: #ccc;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: #00cfff;
+  color: white;
+  border-radius: 5px;
+}
+.trip-inspiration {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+h1{
+    font-size: 65px;
+    text-align: center;
+    margin-top: 8rem;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0.5rem;
+}
+.page2{
+    height: 200vh;
+    background: linear-gradient(rgb(50, 47, 47),rgb(144, 243, 246),white);
+    padding-top: 3em;
+}
+.page2-h1{
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0rem;
+}
+img{
+    height: 50%;
+    width: 25%;
+    margin-left: 10rem;
+  
+}
+.img-cont{
+    display: flex;
+    padding-right: 10em;
+    margin-top: 3rem;
+    
+    
+}
+.img-cont img{
+    margin-bottom: 10rem;
+}
+h5{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-left: 39rem;
+}
+ul{
+    margin-top: 3rem;
+    margin-left: -14rem;
+    font-size: 20px;
+    
+}
+.blog-cont{
+  height: 25%;
+  width: 70%;
+  /* border: 2px solid yellow; */
+  margin-top: 4rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-cont-2{
+  height: 25%;
+  width: 70%;
+  /* border: 2px solid yellow; */
+  margin-top: 4rem;
+  margin-left: 26rem;
+  display: flex;
+  justify-content: space-between;
+}
+.info-culture{
+  height: 100%;
+  width: 50%;
+  /* border: 2px solid red; */
+}
+.para-culture{
+  font-size: 17px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.blog-img{
+  height: 100%;
+  width: 50%;
+  
+  margin-left: 0
+}
+.para-head{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

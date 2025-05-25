@@ -531,5 +531,92 @@ nav a {
     margin-bottom: 20px;
   }
 }
+/* Base mobile styles for devices under 768px width */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .search-bar button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .step {
+    text-align: center;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .circle-network {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+  }
+}
 
 
