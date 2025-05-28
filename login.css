@@ -1,120 +1,88 @@
-@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Popping", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('https://akshitphotography.com/wp-content/uploads/2021/08/Nature-Photography-105.jpg') no-repeat center center/cover;
-    background-size: cover;
-    background-position: center;
-}
-.wrapper{
-    width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #fff;
-    border-radius: 12px;
-    padding: 30px 40px;
+body {
+  background-color: #0583D2;
 }
 
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  color: #0583D2;
+  letter-spacing: 0.1em;
 }
 
-.wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
 }
 
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+p span {
+  background:#fff;
+  padding:0 10px;
 }
 
-.input-box input::placeholder {
-    color: #fff;
+input {
+  margin-bottom: 3%;
 }
 
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+input:last-of-type {
+  margin-bottom: 0;
 }
 
-.wrapper .remember-forget {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+input, button {
+  padding: 3%;
+  width: 100%;
 }
 
-.remember-forget label input {
-    accent-color: #fff;
-    margin-right: 3px;
+.login-container {
+  background-color: white;
+  padding: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* horizontal align */
+  width: 40vw;
+  margin-left: 30vw;
+  /* vertical align */
+  height: 70vh;
+  margin-top: 15vh;
 }
 
-.remember-forget a {
-    color: #fff;
-    text-decoration: none;
+#submit, #create-acct-btn {
+  background-color: #0583D2;
+  color: white;
+  border: none;
+  margin-top: 5%;
 }
 
-.remember-forget a:hover {
-    text-decoration: underline;
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
-.wrapper .btn {
-    width: 100%;
-    height: 45px;
-    background: white;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+#sign-up {
+  border: none;
 }
 
-.wrapper .register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+#create-acct {
+  display: none;
 }
 
-.register-link p a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.register-link p a:hover {
-    text-decoration: underline;
-} 
-
-.wrapper .btn:hover{
-    background-color: gray;
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
 }
