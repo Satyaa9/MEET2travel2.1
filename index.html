@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MEET2 Travel</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
 </head>
 <body>
   <header>
@@ -223,7 +227,29 @@
       <p>Copyright © 2025 Meet2Travel and other trademarks, service marks, and designs are the registered or
         unregistered trademarks of Meet2Travel Inc. in IND and other countries.</p>
     </div>
+      <div id="root">
+        
+      </div>
+
   </footer>
+
+  <script type="text/babel">
+  const App = () => {
+    return (
+      <div>
+        <h2>Hello from React!</h2>
+        <p>Welcome to MEET2TRAVEL</p>
+      </div>
+    );
+  };
+
+  const rootElement = document.getElementById('root');
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<App />);
+</script>
+
+
+
 
 
 

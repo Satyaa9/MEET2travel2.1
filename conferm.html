@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maldives Travel Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-section {
+      flex: 1;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      min-height: 300px;
+    }
+
+    .content {
+      flex: 1.2;
+      padding: 20px 30px;
+    }
+
+    .content h2 {
+      color: #0077cc;
+    }
+
+    .content p {
+      margin: 10px 0;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .info-hidden {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e6f2ff;
+      border-radius: 5px;
+      border: 1px solid #b3d9ff;
+    }
+
+    .info-hidden strong {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  color: #ccc;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.auth-buttons button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: #00cfff;
+  color: white;
+  border-radius: 5px;
+}
+
+    .submit-btn {
+      background: #28a745;
+      margin-top: 10px;
+    }
+    header {
+  height:100vh;
+ background-image: url(/Blog-img.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position:0rem 0rem;
+
+  color: white;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  color: #ccc;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup {
+  background: #00cfff;
+  color: white;
+  border-radius: 5px;
+}
+.trip-inspiration {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+h1{
+    font-size: 65px;
+    text-align: center;
+    margin-top: 8rem;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0.5rem;
+}
+  </style>
+</head>
+<body>
+
+      <div class="navbar">
+      <div class="logo">MEET2TRAVEL <span>Travel Simplified</span></div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./planning.html">Start Planning</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./work.html">How It Works</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="auth-buttons">
+        <button class="login"><a href="./login.html">Login</a></button>
+        <button class="signup"><a href="./signup.html">Signup</a></button>
+      </div>
+    </div>
+
+<div class="container">
+  <div class="image-section"></div>
+  <div class="content">
+    <h2>Maldives</h2>
+    <p><strong>Flight Details:</strong> 8h from Dubai · 10h from London · Direct flights available</p>
+    <p><strong>Address:</strong> South Male Atoll, Maldives</p>
+    <p><strong>Nearby Hotels:</strong> Anantara Veli, Baros Maldives, Taj Exotica</p>
+    <p><strong>Description:</strong> Crystal-clear waters, white-sand beaches, and luxury water villas. Ideal for couples and divers.</p>
+    <button class="btn" onclick="toggleInfo()">Go To Conferm</button>
+    
+    <div class="info-hidden" id="moreInfo">
+      <strong>Price Range:</strong>
+      From $1,200 – $3,500 per person (7 nights, including flights & villa stay)<br><br>
+
+      <strong>Booking Details:</strong>
+      <form action="./moreinfo.html" method="GET">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <button class="btn submit-btn" type="submit">Confirm Ticket</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleInfo() {
+    const info = document.getElementById("moreInfo");
+    info.style.display = info.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>

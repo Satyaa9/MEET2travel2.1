@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfect Trip Planner</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .section {
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #000;
+    }
+
+    p {
+      color: #444;
+    }
+
+    .steps {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .step {
+      width: 280px;
+      margin: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .step img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .button {
+      background-color: #00bfff;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .team-info, .form-section {
+      margin-top: 40px;
+      text-align: left;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-group {
+      margin: 15px 0;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+
+<div class="section">
+  <h4>3 STEPS TO THE PERFECT TRIP</h4>
+  <h2>Find Travel Perfection, With the Wisdom of Experts</h2>
+  <p>Travel to the four corners of the world, without going around in circles.</p>
+
+  <div class="steps">
+    <div class="step">
+      <img src="./why-do-you-want-to-join-our-company.jpg" alt="Step 1">
+      <h3>Tell us what you want to do</h3>
+      <p>Fill out a 2-minute questionnaire about how you like to travel</p>
+    </div>
+    <div class="step">
+      <img src="./SI202501240184-scaled.webp" alt="Step 2">
+      <h3>Share Your Travel Preference & Dates</h3>
+      <p>It all happens online. We recommend everything to your vision</p>
+    </div>
+    <div class="step">
+      <img src="./Blog-img.jpg" alt="Step 3">
+      <h3>We'll give you tailored recommendations</h3>
+      <p>Once you're happy with your final plan, we handle everything for you</p>
+    </div>
+  </div>
+
+  <button class="button" onclick="showPlanner()">Share Reference</button>
+
+ <div id="planner" class="hidden">
+    <div class="team-info">
+      <h2>Meet Our Team & Organization</h2>
+      <p>We are a team of passionate travel consultants, destination experts, and concierge planners committed to crafting your perfect journey. Our organization partners with luxury hotels, local guides, and airlines to bring you a seamless and unforgettable travel experience.</p>
+    </div>
+
+   <!-- Replace the form section in your existing HTML with this -->
+<div class="form-section">
+  <h2>Your Travel Preferences</h2>
+  <form id="tripForm">
+    <div class="form-group">
+      <label for="destination">Where do you want to go?</label>
+      <input type="text" id="destination" name="destination" placeholder="e.g., Maldives, Paris, Tokyo" required>
+    </div>
+
+    <div class="form-group">
+      <label for="locationType">What type of location do you love?</label>
+      <select id="locationType" name="locationType" required>
+        <option value="">-- Select --</option>
+        <option value="beach">Beach</option>
+        <option value="mountain">Mountain</option>
+        <option value="city">City</option>
+        <option value="countryside">Countryside</option>
+        <option value="adventure">Adventure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="travelDate">Preferred Travel Date:</label>
+      <input type="date" id="travelDate" name="travelDate" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Preferences</button>
+  </form>
+</div>
+
+
+<script>
+  function showPlanner() {
+    document.getElementById("planner").classList.remove("hidden");
+    window.scrollTo({ top: document.getElementById("planner").offsetTop, behavior: 'smooth' });
+  }
+</script>
+<script>
+  function showPlanner() {
+    document.getElementById("planner").classList.remove("hidden");
+    window.scrollTo({ top: document.getElementById("planner").offsetTop, behavior: 'smooth' });
+  }
+
+  // Prevent form submission unless valid
+  document.getElementById("tripForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Stop default form action
+    const destination = document.getElementById("destination").value.trim();
+    const locationType = document.getElementById("locationType").value;
+    const travelDate = document.getElementById("travelDate").value;
+    const email = document.getElementById("email").value.trim();
+
+    if (destination && locationType && travelDate && email) {
+      // Redirect after validation success
+      window.location.href = "./getstarted.html";
+    } else {
+      alert("Please fill out all fields before continuing.");
+    }
+  });
+</script>
+
+
+</body>
+</html>

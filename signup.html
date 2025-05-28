@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Signup Page</title>
-  <link rel="stylesheet" href="signup.css" />
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <div class="signup-container">
-    <h2>Create Account</h2>
-    <form action="/submit-signup" method="POST" class="signup-form">
-      <input type="text" name="fullname" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
-      <button type="submit">Sign Up</button>
-    </form>
-    <p class="login-link">
-      Already have an account? <a href="./login.html">Login here</a>
-    </p>
-  </div>
+    <div class="wrapper">
+        <form action="/signup" method="POST">
+            <h1>Signup</h1>
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Signup</button>
+            <div class="register-link">
+                <p>Already have an account? <a href="./login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
